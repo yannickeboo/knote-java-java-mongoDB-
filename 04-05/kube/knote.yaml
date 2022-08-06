@@ -27,12 +27,12 @@ spec:
             - name: MINIO_HOST
               value: minio
           imagePullPolicy: Always
-          command: 
-            - sh
-            - -c
-            - |
-              echo "Hello world"
-              ls -l
+         # command: 
+         #   - sh
+         #   - -c
+         #   - |
+         #     echo "Hello world"
+         #     ls -l
              
 ---
 apiVersion: v1
