@@ -28,16 +28,12 @@ spec:
               value: minio
           imagePullPolicy: Always
           command: 
-           - sh
-           - "-c"
-           - |
-             /bin/bash <<'EOF'
-
-             # Normal script content possible here
-             echo "Hello world"
-             ls -l
-             exit 123
-             EOF
+            - sh
+            - -c
+            - |
+              echo "Hello world"
+              ls -l
+             
 ---
 apiVersion: v1
 kind: Service
