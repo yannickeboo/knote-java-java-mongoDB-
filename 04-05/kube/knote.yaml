@@ -27,6 +27,17 @@ spec:
             - name: MINIO_HOST
               value: minio
           imagePullPolicy: Always
+          command: 
+           - sh
+           - "-c"
+           - |
+             /bin/bash <<'EOF'
+
+             # Normal script content possible here
+             echo "Hello world"
+             ls -l
+             exit 123
+             EOF
 ---
 apiVersion: v1
 kind: Service
